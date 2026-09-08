@@ -7,7 +7,7 @@ The site was generated in order to demonstrate creation of Flask sites with
 <br>
 Steps:
 <ul>
-<li>Ask Claude for help setting up a Flask website.</li>
+<li>Ask <i>Claude</i> for help setting up a Flask website.</li>
 <li>Including <i>Static</i> and <i>Template</i> folder (with relevant content).</li>
 <li>Then ask <i>Claude</i> for javascript games.</li>
 <li>(and) game written in Python code.</li>
