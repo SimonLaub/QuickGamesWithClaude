@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Arcade</title>
+<style>
+  body {
+    margin: 0;
+    background: #222;
+    color: #eee;
+    font-family: monospace, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  h1 { margin-bottom: 10px; }
+  #menu button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 8px;
+    cursor: pointer;
+  }
+  #gameArea { display: none; flex-direction: column; align-items: center; }
+  canvas { border: 2px solid #888; background: #000; }
+  #backBtn { margin-top: 10px; }
+  a.home-link { color: #9cf; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+<a class="home-link" href="{{ url_for('home') }}">&larr; Tilbage til forsiden</a>
+<h1>Arcade</h1>
+
+<div id="menu">
+  <button data-game="spaceInvaders">Space Invaders</button>
+  <button data-game="snake">Snake</button>
+  <button data-game="cardGame">Memory (kortspil)</button>
+</div>
+
+<div id="gameArea">
+  <canvas id="canvas"></canvas>
+  <button id="backBtn">Tilbage til menu</button>
+</div>
+
+<script src="{{ url_for('static', filename='js/spaceinvaders.js') }}"></script>
+<script src="{{ url_for('static', filename='js/snake.js') }}"></script>
+<script src="{{ url_for('static', filename='js/cardgame.js') }}"></script>
+<script>
+  const menu = document.getElementById('menu');
+  const gameArea = document.getElementById('gameArea');
+  const canvas = document.getElementById('canvas');
+  const backBtn = document.getElementById('backBtn');
+
+  let currentGame = null;
+
+  document.querySelectorAll('#menu button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const key = btn.dataset.game;
+      const game = window.Games[key];
+      if (!game) return;
+      menu.style.display = 'none';
+      gameArea.style.display = 'flex';
+      currentGame = game;
+      game.start(canvas);
+    });
+  });
+
+  backBtn.addEventListener('click', () => {
+    if (currentGame) {
+      currentGame.stop();
+      currentGame = null;
+    }
+    gameArea.style.display = 'none';
+    menu.style.display = 'block';
+  });
+</script>
+</body>
+</html>
