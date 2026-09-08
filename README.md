@@ -18,4 +18,4 @@ the Flask website.</li>
 </ul>
 <br>
 <img src="Arcade.jpg" alt="Arcade games"  style="width: 250px; height: auto;"><br>
-Original Flask <a href="https://github.com/SimonLaub/FlaskProject">website</a>.
+Original (2018) Flask <a href="https://github.com/SimonLaub/FlaskProject">website</a>.
