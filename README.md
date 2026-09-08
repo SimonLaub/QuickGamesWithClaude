@@ -10,7 +10,7 @@ Steps:
 <li>Ask Claude for help setting up a Flask website.</li>
 <li>Including <i>Static</i> and <i>Template</i> folder.</li>
 <li>Then ask Claude for javascript game.</li>
-<li>(and)game written in Python code.</li>
+<li>(and) game written in Python code.</li>
 <li>Conclude by letting Claude download images, <br>and create
 the full Flask website.</li>
 </ul>
