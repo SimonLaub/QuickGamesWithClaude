@@ -13,8 +13,8 @@ Steps:
 <li>Including <i>Static</i> and <i>Template</i> folder (with relevant content).</li>
 <li>Then ask <i>Claude</i> for javascript games.</li>
 <li>(and) a game written in Python.</li>
-<li>Conclude by letting Claude download images for the site, <br>and then let <i>Claude</i>i> create
-the full Flask website.</li>
+<li>Conclude the task by letting Claude download images for the site, <br>and then let <i>Claude</i>i> finalize
+the Flask website.</li>
 </ul>
 <br>
 <img src="Arcade.jpg" alt="Arcade games"  style="width: 250px; height: auto;"><br>
