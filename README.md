@@ -16,3 +16,5 @@ Steps:
 <li>Conclude by letting Claude download images, <br>and create
 the full Flask website.</li>
 </ul>
+<br>
+Original Flask <a href="https://github.com/SimonLaub/FlaskProject">website</a>.
