@@ -1,5 +1,5 @@
 # Flask website with games.
-# Inspiration for Flask code generation with Claude.
+<h4>Inspiration for Flask code generation with Claude</h4>
 
 A Flask website with access to 4 games. <br>
 3 js games and 1 python game. <br>
