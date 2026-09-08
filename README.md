@@ -11,4 +11,6 @@ Steps:
 <li>Including <i>Static</i> and <i>Template</i> folder.</li>
 <li>Then ask Claude for javascript game.</li>
 <li>And game written in Python code.</li>
+<li>Conclude by letteng Claude download images, <br>and create
+the Flask website.</li>
 </ul>
