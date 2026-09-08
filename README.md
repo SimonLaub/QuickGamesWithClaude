@@ -17,4 +17,5 @@ Steps:
 the full Flask website.</li>
 </ul>
 <br>
+<img src="Arcade.jpg" alt="Arcade games"><br>
 Original Flask <a href="https://github.com/SimonLaub/FlaskProject">website</a>.
